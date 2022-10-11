@@ -207,6 +207,7 @@ function getNotificationInstance(
   notificationInstance[cacheKey] = new Promise(resolve => {
     // console.log(Notification.newInstance, 'Promise-Notification')
     // newInstance 方法参数 (properties, callback), getContainer为默认的 defaultGetContainer
+    // 对应的是源码中的 Notification.newInstance 这个方法
     Notification.newInstance({
       prefixCls,
       style: getPlacementStyle(placement, top, bottom),
